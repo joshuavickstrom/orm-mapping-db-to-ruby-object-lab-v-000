@@ -97,7 +97,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql, id).map { |row| self.new_from_db(row) }.first
-    binding.pry
+    # binding.pry
   end
 
   # def self.all_students_in_grade_X(num)
